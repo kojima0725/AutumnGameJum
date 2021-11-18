@@ -120,8 +120,8 @@ public class Line : MonoBehaviour
 
 		//Add the point to the points list
 		points.Add (point);
-		lineRenderer.numPositions++;
-		lineRenderer.SetPosition (lineRenderer.numPositions - 1, point);
+		lineRenderer.positionCount++;
+		lineRenderer.SetPosition (lineRenderer.positionCount - 1, point);
 
 		if (autoAddColliderPoint) {
 			//Add the point to the collider of the line
