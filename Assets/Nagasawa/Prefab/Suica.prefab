@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4795462962200024827}
   - component: {fileID: 5309756084145151592}
   - component: {fileID: 2617984417981552997}
+  - component: {fileID: 2679102142983030074}
   m_Layer: 0
   m_Name: Suica
   m_TagString: Untagged
@@ -120,3 +121,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2679102142983030074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100273290913686071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed082c4133c9c6849800cab5d159574e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_point: 100

@@ -1597,6 +1597,7 @@ GameObject:
   - component: {fileID: 6657870512966762839}
   - component: {fileID: 3567264352653411930}
   - component: {fileID: 5985923251204586759}
+  - component: {fileID: -4969964248349536421}
   m_Layer: 0
   m_Name: Melon
   m_TagString: Untagged
@@ -1748,3 +1749,16 @@ MonoBehaviour:
     m_Extent: {x: 1.4573538, y: 1.6460221, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
+--- !u!114 &-4969964248349536421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985923251204586760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed082c4133c9c6849800cab5d159574e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_point: 500
