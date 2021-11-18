@@ -11,7 +11,15 @@ public class FruitManager : MonoBehaviour
     {
         if(collision.gameObject.tag == m_ground)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == m_ground)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
