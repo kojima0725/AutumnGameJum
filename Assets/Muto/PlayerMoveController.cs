@@ -16,10 +16,12 @@ public class PlayerMoveController : MonoBehaviour
     Vector2 _move;
     Rigidbody2D _rb;
     GameManager _gmanager;
+    AudioSource _clip;
 
     private void Awake()
     {
         _gmanager = GameObject.FindObjectOfType<GameManager>();
+        _clip = GetComponent<AudioSource>();
     }
     private void Start()
     {
@@ -89,6 +91,7 @@ public class PlayerMoveController : MonoBehaviour
         {
             var obj = collision.GetComponent<FruitManager>();
             _gmanager.GetItem(obj.m_point);
+            _clip.Play();
             Destroy(collision.gameObject);
         }
     }
