@@ -104,6 +104,7 @@ public class Line : MonoBehaviour
 	/// <param name="point">Vector3 Point.</param>
 	public void AddPoint (Vector3 point)
 	{
+		Debug.Log(points.Count);
 		//If the given point already exists ,then skip it
 		if (points.Contains (point)) {
 			return;
