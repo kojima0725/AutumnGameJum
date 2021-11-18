@@ -9,9 +9,6 @@ public class PlayerMoveController : MonoBehaviour
     [SerializeField] float _waitingTime = 1.5f;
     [SerializeField] bool _isWait = true;
     [SerializeField] string _fruitTag = "";
-    [SerializeField] int _fruitScore = 100;
-    [SerializeField] string _poisonAppleTag = "";
-    [SerializeField] int _poisonAppleScore = -500;
     [SerializeField] Transform[] _points = default;
     int _count;
     float _time;
@@ -89,13 +86,9 @@ public class PlayerMoveController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag(_fruitTag))
         {
+            var obj = collision.GetComponent<FruitManager>();
+            _gmanager.GetItem(obj.m_point);
             Destroy(collision.gameObject);
-            _gmanager.GetItem(_fruitScore);
-        }
-        if(collision.gameObject.CompareTag(_poisonAppleTag))
-        {
-            Destroy(collision.gameObject);
-            _gmanager.GetItem(_poisonAppleScore);
         }
     }
 }
