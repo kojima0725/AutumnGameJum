@@ -22,7 +22,7 @@ public class GameTimer : MonoBehaviour
 
 
 
-    bool ingame;
+    bool ingame = false;
     public void StartGame()
     {
         ingame = true;
@@ -30,6 +30,10 @@ public class GameTimer : MonoBehaviour
 
     void Update()
     {
+        if (!ingame)
+        {
+            return;
+        }
         timer -= Time.deltaTime;
         if (timer < 0)
         {

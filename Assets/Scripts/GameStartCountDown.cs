@@ -25,7 +25,6 @@ public class GameStartCountDown : MonoBehaviour
         {
             _isStart = true;
             _event.Invoke();
-            Destroy(this.gameObject);  
         }
     }
 }
