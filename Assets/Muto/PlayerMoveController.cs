@@ -59,14 +59,12 @@ public class PlayerMoveController : MonoBehaviour
                 if (_time >= _waitingTime)
                 {
                     _count = Random.Range(0, _points.Length);
-                    Debug.Log(_points[_count]);
                     _time = 0;
                 }
             }
             else
             {
                 _count = Random.Range(0, _points.Length);
-                Debug.Log(_points[_count]);
             }
         }
 
