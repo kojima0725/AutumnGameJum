@@ -104,19 +104,22 @@ public class Line : MonoBehaviour
 	/// <param name="point">Vector3 Point.</param>
 	public void AddPoint (Vector3 point)
 	{
-		//If the given point already exists ,then skip it
-		if (points.Contains (point)) {
-			return;
-		}
+        //If the given point already exists ,then skip it
+        if (points.Contains(point))
+        {
+            return;
+        }
 
-		if (points.Count > 1) {
-			if (Vector2.Distance (point, points [points.Count - 1]) < pointMinOffset) {
-				return;//skip the point
-			}
-		}
+        if (points.Count > 1)
+        {
+            if (Vector2.Distance(point, points[points.Count - 1]) < pointMinOffset)
+            {
+                return;//skip the point
+            }
+        }
 
-		//z-position of the point
-		point.z = pointZPosition;
+        //z-position of the point
+        point.z = pointZPosition;
 
 		//Add the point to the points list
 		points.Add (point);
